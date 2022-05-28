@@ -68,8 +68,15 @@ a {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
-  /* ---------------------------------------------------------------- */
 }
+.container {
+  width: 1200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+}
+
+/* ---------------------------------------------------------------- */
 /* W-E-B-S-T-U-D-I-O */
 /* Section hero */
 .section-hero {
