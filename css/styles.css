@@ -28,6 +28,14 @@ ul {
 a {
   text-decoration: none;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
 /* Heder*/
 .logo {
   font-family: 'Raleway';
@@ -44,7 +52,21 @@ a {
 .logo .primery-studio {
   color: var(--secondary-text-color);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 51px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -58,6 +80,13 @@ a {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 .auth-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -68,12 +97,6 @@ a {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
-}
-.container {
-  width: 1200px;
-  margin-left: 15px;
-  margin-right: 15px;
-  display: flex;
 }
 
 /* ---------------------------------------------------------------- */
