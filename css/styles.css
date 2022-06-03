@@ -28,14 +28,6 @@ ul {
 a {
   text-decoration: none;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid tomato;
-}
 h1,
 h2,
 h3,
@@ -46,6 +38,17 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px solid tomato; */
 }
 /* Heder*/
 .logo {
@@ -112,10 +115,13 @@ ul {
 
 /* ---------------------------------------------------------------- */
 /* W-E-B-S-T-U-D-I-O */
+
 /* Section hero */
 .section-hero {
   background-color: var(--secondary-backgroud-color);
   text-align: center;
+  max-width: 1600px;
+  margin: auto;
 }
 .section-title-hero {
   font-weight: 900;
@@ -124,8 +130,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   margin-top: 0;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .button-hero {
   font-weight: 700;
@@ -140,6 +148,7 @@ ul {
   text-align: center;
   padding: 11px 34px;
   margin-top: 40px;
+  margin-bottom: 200px;
 }
 .section .button-hero:hover {
   color: var(--title-text-color);
@@ -148,7 +157,8 @@ ul {
 
 .features-list {
   display: flex;
-  margin-top: 90px;
+  padding-top: 94px;
+  padding-bottom: 0;
 }
 .features-list .item:not(:last-child) {
   margin-right: 30px;
@@ -164,30 +174,49 @@ ul {
   font-size: 14px;
   line-height: 1.71;
 }
+/* Section service */
 
-.servis-list {
+.service-list {
   display: flex;
+  padding-top: 50px;
 }
-.servis-list .item {
-  margin-top: 50px;
+.service-list .item {
+  display: block;
 }
-.section .section-title-service,
+.service-list .item + .item {
+  margin-left: 30px;
+}
+.section-title-service,
 .section-title-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-top: 94px;
   color: var(--title-text-color);
+}
+/* Section team */
+
+.team-list {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 .section-title-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--title-text-color);
+  text-align: center;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 /* P-O-R-T-F-O-L-I-O */
 /* Filter buttton portfolio*/
@@ -217,9 +246,15 @@ ul {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+
 /* Footer-------------------------------------------- */
 .footer {
   background-color: var(--secondary-backgroud-color);
+  max-width: 1600px;
+  margin: auto;
+}
+.footer-list {
+  display: block;
 }
 .auth-nav .address {
   font-style: normal;
