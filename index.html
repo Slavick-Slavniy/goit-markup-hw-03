@@ -10,58 +10,59 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"/>
   </head>
   <body>
-      <header/>
-          <div class="container main-nav">
-            <a href="" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
-            <ul class="site-nav">
-              <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-              <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-              <li class="item"><a href="" class="link">Контакти</a></li>
-            </ul>
-            <ul class="auth-nav">
-              <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-              <li class="item" ><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
-          </div>
-      </header>
-    <main>
-      <div>
-        <section class="section-hero">
-          <h1 class="section-title-hero">Эффективные решения <br/>для вашего бизнеса</h1>
-          <button type="button" class="button-hero">Заказать услугу</button>
-        </section>
+    <header/>
+      <div class="container main-nav">
+        <a href="" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+          <ul class="site-nav">
+            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
+          </ul>
+          <ul class="auth-nav">
+            <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="item" ><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+           </ul>
       </div>
-      <section class="section">
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container hero">
+        <h1 class="section-title-hero">Эффективные решения <br/>для вашего бизнеса</h1>
+        <button type="button" class="button-hero">Заказать услугу</button>
+          </div>
+      </section>
+      <section class="section-features">
         <div class="container features">
-         <ul class="features-list">
-           <li class="item">
-             <h3 class="section-title-features">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-             <p class="section-features">
+          <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="features-list">
+               <li class="item">
+                <h3 class="section-title-features">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                <p class="features-text">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
-             </p>
-           </li>
-           <li class="item">
+                </p>
+               </li>
+            <li class="item">
              <h3 class="section-title-features">ПУНКТУАЛЬНОСТЬ</h3>
-             <p class="section-features">
+             <p class="features-text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
              </p>
            </li>
            <li class="item">
              <h3 class="section-title-features">ПЛАНИРОВАНИЕ</h3>
-             <p class="section-features">
+             <p class="features-text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
              </p>
            </li>
            <li class="item">
              <h3 class="section-title-features">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-             <p class="section-features">
+             <p class="features-text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
              </p>
            </li>
          </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section-service">
        <div class="container service"> 
           <h2 class="section-title-service">Чем мы занимаемся</h2>
           <ul class="service-list">
@@ -89,16 +90,17 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section-team">
         <div class="container team">
           <h2 class="section-title-team">Наша команда</h2>
-          <ul class="team-list">
-            <li class="item">
-              <img src="images/img1.jpg"
+          <div class="card-team">
+            <ul class="team-list">
+              <li class="item">
+                <img src="images/img1.jpg"
               alt="Молодой улыбающийся мужчина с бородой в прозрачных очках"
               width="270" height="260"/>
-              <h3 class="section-title-name">Игорь Демьяненко</h3>
-              <p lang="en" class="team-position">Product Designer</p>
+                <h3 class="section-title-name">Игорь Демьяненко</h3>
+                <p lang="en" class="team-position">Product Designer</p>
             </li>
             <li class="item">
               <img src="images/img2.jpg"
@@ -120,13 +122,14 @@
              <p lang="en" class="team-position">UI Designer</p>
             </li>
           </ul>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container footer-list">
         <a href="./index.html" class="logo"><span class="web">Web</span><span class="primery-studio">Studio</span></a>
-        <address class="auth-nav">
+        <address class="address-list">
           <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
           <p><a href="mailto:info@example.com" class="link-address">info@example.com</a></p>
           <p><a href="tel:+380991111111" class="link-address">+38 099 111 11 11</a></p>

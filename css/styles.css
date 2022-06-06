@@ -47,9 +47,23 @@ img {
 }
 .container {
   width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid tomato; */
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Heder*/
 .logo {
@@ -105,6 +119,8 @@ img {
 .auth-nav .link {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -121,7 +137,6 @@ img {
 .section-hero {
   background-color: var(--secondary-backgroud-color);
   text-align: center;
-  max-width: 1600px;
   margin: auto;
 }
 .section-title-hero {
@@ -159,7 +174,6 @@ img {
 .features-list {
   display: flex;
   padding-top: 94px;
-  padding-bottom: 0;
 }
 .features-list .item:not(:last-child) {
   margin-right: 30px;
@@ -171,7 +185,7 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.section-features {
+.section-features .features-text {
   font-size: 14px;
   line-height: 1.71;
 }
@@ -180,6 +194,7 @@ img {
 .service-list {
   display: flex;
   padding-top: 50px;
+  padding-bottom: 94px;
 }
 .service-list .item {
   display: block;
@@ -194,16 +209,26 @@ img {
   line-height: 1.16;
   text-align: center;
   padding-top: 94px;
+
   color: var(--title-text-color);
 }
 /* Section team */
-
-.team-list {
-  display: flex;
+.section-team {
+  background-color: #f5f4fa;
+  margin: auto;
+}
+.card-team {
   padding-top: 50px;
   padding-bottom: 94px;
-  justify-content: space-evenly;
-  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-list .item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list .item:not(:last-child) {
   margin-right: 30px;
@@ -221,23 +246,56 @@ img {
   line-height: 1.18;
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 /* P-O-R-T-F-O-L-I-O */
+
 /* Filter buttton portfolio*/
-.site-nav .button-filter {
+.header-line {
+  border-bottom: 1px solid #eeeeee;
+}
+.button-filter {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+.button-filter .item {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: #ffffff;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+  background-color: #f5f4fa;
 }
-.site-nav .button-filter:hover,
-.site-nav .button-filter:focus {
+.button-filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-filter .item:hover,
+.button-filter .item:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
 /* Projects section portfolio */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+.project-list .item {
+  /* flex-basis: calc((100% - 20px) / 4);
+} */
+  width: 370px;
+}
 .project {
   font-size: 16px;
   line-height: 1.87px;
@@ -254,25 +312,30 @@ img {
 /* Footer-------------------------------------------- */
 .footer {
   background-color: var(--secondary-backgroud-color);
-  max-width: 1600px;
-  margin: auto;
 }
 .footer-list {
   display: block;
+  padding-top: 60px;
 }
-.auth-nav .address {
+.address-list {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  padding-bottom: 60px;
+
   color: var(--secondary-text-color);
 }
-.auth-nav .link-address {
+.address {
+  padding-top: 20px;
+}
+.link-address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  padding-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
-.auth-nav .link-address:hover,
-.auth-nav .link-address:focus {
+.link-address:hover,
+.link-address:focus {
   color: var(--accent-color);
 }
