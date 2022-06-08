@@ -209,10 +209,6 @@ img {
   color: var(--title-text-color);
 }
 /* Section team */
-.card-team-section {
-  background-color: #f5f4fa;
-  margin: auto;
-}
 .team-list {
   display: flex;
   gap: 30px;
