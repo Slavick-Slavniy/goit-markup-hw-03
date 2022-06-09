@@ -121,7 +121,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  flex-basis: calc((100% - 50px) / 2);
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -149,7 +148,6 @@ img {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  /* outline: 2px solid tomato; */
 }
 .button-hero {
   font-weight: 700;
@@ -162,6 +160,8 @@ img {
   display: inline-block;
   text-align: center;
   padding: 10px 32px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -172,7 +172,6 @@ img {
 .features-list {
   display: flex;
   gap: 30px;
-  padding-top: 94px;
   justify-content: center;
 }
 .features-list .item {
@@ -191,6 +190,9 @@ img {
   line-height: 1.71;
 }
 /* Section service */
+service .section {
+  padding-top: 0;
+}
 
 .service-list {
   display: flex;
@@ -209,6 +211,9 @@ img {
   color: var(--title-text-color);
 }
 /* Section team */
+.team {
+  background-color: #f5f4fa;
+}
 .team-list {
   display: flex;
   gap: 30px;
@@ -266,6 +271,8 @@ img {
 .button-filter .item:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Projects section portfolio */
 .project-list {
